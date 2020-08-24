@@ -7,6 +7,7 @@ const RESET_TASK_LIST = 'RESET_TASK_LIST';
 const tasksReducer = (state = [], action) => {
   switch (action.type) {
     case CREATE_TASK:
+      debugger
       const newTask = {
         message: action.taskMessage,
       };
@@ -24,6 +25,7 @@ const tasksReducer = (state = [], action) => {
 const store = createStore(tasksReducer);
 
 const createTask = (taskMessage) => {
+  debugger
   return {
     type: CREATE_TASK,
     taskMessage: taskMessage,

@@ -43,3 +43,10 @@ const resetTaskList = () => {
     emptyTaskList: [],
   };
 };
+
+module.exports = {
+  store,
+  createTask,
+  deleteTask,
+  resetTaskList,
+};
